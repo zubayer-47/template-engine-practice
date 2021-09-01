@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Zero - login or sign up</title>
+   <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body class="bg-blue-50">
+   <div class="grid md:grid-cols-2 mt-32">
+      <div class="flex justify-center items-start flex-col mx-5 mb-4 xl:ml-32">
+         <h1 class="block items-end text-4xl font-sans text-green-400">Zero</h1>
+         <p class="text-gray-600">Zero helps you connect and share with the people in your life.</p>
+      </div>
+
+      <div class="flex justify-center items-center flex-col">
+         <form action="/login" method="POST" class="bg-gray-50 p-6 rounded-lg xl:w-7/12 mx-4 shadow-md"
+            autocomplete="off">
+            <input placeholder="Username" type="text" name="username"
+               class="w-full rounded-lg placeholder-gray-300 mb-3 border py-2 px-2 outline-none ring-1 ring-green-100" />
+            <input placeholder="password" type="password" name="password"
+               class="w-full rounded-lg placeholder-gray-300 mb-3 border py-2 px-2 outline-none ring-1 ring-green-100" />
+
+            <input type="submit" value="Log In"
+               class="w-full rounded-lg mb-3 border py-2 px-2 outline-none bg-green-400 hover:bg-green-500 text-blue-50 cursor-pointer" />
+            <a href="/forget-password" class="block text-center py-1 text-green-500 hover:underline">Forgotten
+               Password?</a>
+
+            <hr class="mt-3">
+
+            <a href="/register"
+               class="block text-center w-full rounded-lg mb-3 border py-2 px-2 outline-none bg-red-500 hover:bg-red-400 text-blue-50 cursor-pointer mt-5">Create
+               New Account</a>
+         </form>
+
+      </div>
+
+   </div>
+</body>
+
+</html>

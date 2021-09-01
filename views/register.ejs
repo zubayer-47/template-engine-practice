@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Register</title>
+   <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body class="bg-blue-50 grid place-items-center h-screen">
+   <div class="p-2 mx-auto font-serif text-gray-700 max-h-screen ">
+      <div class="mb-2 ml-10">
+         <h1 class="text-4xl select-none">Sign Up</h1>
+         <p class="">It's quick easy.</p>
+      </div>
+
+      <hr>
+      <form action="/register" method="POST" class="md:max-w-2xl mt-5 mx-3 shadow-md grid gap-3 p-8 rounded-md">
+         <div class="grid grid-cols-2 gap-3">
+            <input class="w-full rounded-md placeholder-gray-300 border py-1 px-2 outline-none ring-1 ring-green-100"
+               type="text" placeholder="First Name" name="firstName" />
+            <input class="w-full rounded-md placeholder-gray-300 border py-1 px-2 outline-none ring-1 ring-green-100"
+               type="text" placeholder="Last Name" name="lastName" />
+         </div>
+         <input class="w-full rounded-md placeholder-gray-300 border py-1 px-2 outline-none ring-1 ring-green-100"
+            type="email" placeholder="Email Address" name="email" />
+         <input class="w-full rounded-md placeholder-gray-300 border py-1 px-2 outline-none ring-1 ring-green-100"
+            type="password" placeholder="Password" name="password" />
+
+         <div>
+            <label for="date" class="ml-1">Date of birth</label>
+            <input class="w-full rounded-md placeholder-gray-300 border py-1 px-2 outline-none ring-1 ring-green-100"
+               type="date" name="date" id="date" />
+         </div>
+
+         <div>
+            <label for="gender" class="ml-1">Gender</label>
+            <div class="grid grid-cols-3 gap-3">
+               <p class="block bg-white py-1 px-2 rounded-md ring-1 ring-green-100"><input type="radio"
+                     class="cursor-pointer" name="gender" id="gender" value="male" /> Male</p>
+
+               <p class="block bg-white py-1 px-2 rounded-md ring-1 ring-green-100"><input type="radio"
+                     class="cursor-pointer" s="mr-auto" name="gender" id="gender" value="female" />
+                  Female</p>
+
+               <p class="block bg-white py-1 px-2 rounded-md ring-1 ring-green-100"><input type="radio"
+                     class="cursor-pointer" name="gender" id="gender" value="custom" /> Custom
+               </p>
+            </div>
+         </div>
+
+         <input type="submit" value="Sign Up"
+            class="w-3/6 mx-auto rounded-md mb-3 border py-1 px-2 outline-none bg-green-400 hover:bg-green-500 text-blue-50 cursor-pointer" />
+      </form>
+   </div>
+</body>
+
+</html>
